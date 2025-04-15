@@ -14,6 +14,3 @@ Passphrases found:
 10. listenToPetalcore
 11. ElaineFirst
 12. iHeartWebDev
-
-// Still need to find passphrases for questions 8
-// Note: Question 10 involves checking Network tab after clicking "Press Me" for questionten.png
