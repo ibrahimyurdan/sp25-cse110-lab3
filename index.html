@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Team Meeting Minutes for CSE 110 Project">
+    <title>Team Meeting Minutes - CSE 110 Project</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <header>
+        <h1>CSE 110 Team Meeting Minutes</h1>
+        <nav>
+            <ul>
+                <li><a href="#attendance">Attendance</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#unfinished">Unfinished Business</a></li>
+                <li><a href="#new">New Business</a></li>
+                <li><a href="#comments">Comments</a></li>
+                <li><a href="#media">Media</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="meeting-info">
+            <h2>Pomodoro Timer First Brainstorm</h2>
+            <h3>Meeting Type: Brainstorming</h3>
+            <p><strong>Date:</strong> <time datetime="2024-04-10">April 10, 2024</time></p>
+        </section>
+
+        <section id="attendance">
+            <h2>Attendance List</h2>
+            <ul>
+                <li><strong>Present:</strong> John Doe (Team Lead), Jane Smith (Developer), Mike Johnson (Designer)</li>
+                <li><em>Absent:</em> Sarah Wilson (Documentation)</li>
+            </ul>
+            <hr>
+        </section>
+
+        <section id="agenda">
+            <h2>Agenda</h2>
+            <ol>
+                <li>Review project requirements</li>
+                <li>Brainstorm timer features</li>
+                <li>Discuss UI/UX design</li>
+                <li>Assign initial tasks</li>
+            </ol>
+        </section>
+
+        <section id="unfinished">
+            <h2>Unfinished Business</h2>
+            <div>
+                <p>Previous action items from team formation meeting:</p>
+                <ul>
+                    <li>Complete GitHub setup <b>Status:</b> <span>Done</span></li>
+                    <li>Review Agile methodology <b>Status:</b> <span>In Progress</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="new">
+            <h2>New Business</h2>
+            <details>
+                <summary>Timer Features Discussion</summary>
+                <ul>
+                    <li>Basic timer functionality</li>
+                    <li>Custom interval settings</li>
+                    <li>Break notifications</li>
+                </ul>
+            </details>
+            <br>
+            <details>
+                <summary>UI Design Concepts</summary>
+                <ul>
+                    <li>Minimalist interface</li>
+                    <li>Responsive design</li>
+                    <li>Accessibility considerations</li>
+                </ul>
+            </details>
+        </section>
+
+        <section id="comments">
+            <h2>Comments/Questions/Concerns</h2>
+            <p>Team members raised concerns about:</p>
+            <ul>
+                <li>Testing requirements</li>
+                <li>Browser compatibility</li>
+                <li>Project timeline</li>
+            </ul>
+        </section>
+
+        <section id="media">
+            <h2>Meeting Media</h2>
+            <h3>Whiteboard Diagram</h3>
+            <img src="diagram.png" alt="System architecture diagram drawn on whiteboard" width="400">
+            
+            <h3>Meeting Recording</h3>
+            <audio controls>
+                <source src="meeting-audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h3>Meeting Video Highlights</h3>
+            <video controls width="400">
+                <source src="meeting-video.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </section>
+
+        <section id="feedback-form">
+            <h2>Meeting Feedback Form</h2>
+            <form>
+                <fieldset>
+                    <legend>Provide Your Feedback</legend>
+                    
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    
+                    <label for="meeting-date">Meeting Date:</label>
+                    <input type="date" id="meeting-date" name="meeting-date"><br><br>
+                    
+                    <label for="satisfaction">Meeting Satisfaction:</label><br>
+                    <input type="radio" id="satisfied" name="satisfaction" value="satisfied">
+                    <label for="satisfied">Satisfied</label><br>
+                    <input type="radio" id="neutral" name="satisfaction" value="neutral">
+                    <label for="neutral">Neutral</label><br>
+                    <input type="radio" id="dissatisfied" name="satisfaction" value="dissatisfied">
+                    <label for="dissatisfied">Dissatisfied</label><br><br>
+                    
+                    <label for="topics">Topics Covered:</label><br>
+                    <input type="checkbox" id="requirements" name="topics" value="requirements">
+                    <label for="requirements">Requirements</label><br>
+                    <input type="checkbox" id="design" name="topics" value="design">
+                    <label for="design">Design</label><br>
+                    <input type="checkbox" id="implementation" name="topics" value="implementation">
+                    <label for="implementation">Implementation</label><br><br>
+                    
+                    <label for="browser">Browser Used:</label>
+                    <select id="browser" name="browser">
+                        <option value="">Select a browser</option>
+                        <option value="chrome">Chrome</option>
+                        <option value="firefox">Firefox</option>
+                        <option value="safari">Safari</option>
+                        <option value="edge">Edge</option>
+                    </select><br><br>
+                    
+                    <label for="suggestions">Suggestions:</label><br>
+                    <textarea id="suggestions" name="suggestions" rows="4" cols="50"></textarea><br><br>
+                    
+                    <label for="priority">Priority Level:</label>
+                    <input list="priorities" id="priority" name="priority">
+                    <datalist id="priorities">
+                        <option value="High">
+                        <option value="Medium">
+                        <option value="Low">
+                    </datalist><br><br>
+                    
+                    <button type="submit">Submit Feedback</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Minutes recorded by: Team Secretary</p>
+        <p>Last updated: <time datetime="2024-04-10T15:00">April 10, 2024 3:00 PM</time></p>
+    </footer>
+</body>
+</html>

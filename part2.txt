@@ -1,1 +1,19 @@
 Fill in the passphrases here.
+
+Passphrases found:
+
+1. WongAvery
+2. iHateC++
+3. HTMLRules
+4. JavaScriptRocks
+5. ShraviBeatsReact
+6. ThisIsJSyay
+7. SofiaWasHere
+8. coolcoolcool3x
+9. 2029_sucked
+10. listenToPetalcore
+11. ElaineFirst
+12. iHeartWebDev
+
+// Still need to find passphrases for questions 8
+// Note: Question 10 involves checking Network tab after clicking "Press Me" for questionten.png
