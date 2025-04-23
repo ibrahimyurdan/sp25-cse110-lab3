@@ -1,11 +1,24 @@
-# Lab 2 - Starter
+# CSE 110 Lab 3 - CSS and Agile
 
-Published site URL: https://ibrahimyurdan.github.io/cse110-sp25-lab2/
+Published site URL: https://ibrahimyurdan.github.io/sp25-cse110-lab3/
 
-## Meeting Minutes Example
-This repository contains an example of meeting minutes created using HTML. The page demonstrates proper usage of HTML elements including semantic structure, forms, multimedia elements, and more.
+This repository is a continuation of Lab 2, with added CSS styling implemented using Agile methodologies.
 
-## Files
+## CSS Implementation
+
+This lab adds CSS to the meeting minutes page from Lab 2, implementing:
+- External CSS (style.css)
+- Internal CSS (style tag in HTML)
+- Inline CSS (style attributes in HTML elements)
+
+## Agile Implementation
+
+- Created issues to track the work required for the lab
+- Used branches and pull requests to manage code changes
+- Created a standup notes template (standup.md)
+
+## Lab 3 Required Files
 - `index.html`: The main meeting minutes page
-- `part2.txt`: Answers to the DevTools scavenger hunt
-- `screenshots/`: Contains W3C validation screenshots
+- `style.css`: External CSS stylesheet
+- `standup.md`: Template for daily standup notes
+- `css-validation/`: Contains CSS validation screenshot
