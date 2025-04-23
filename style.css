@@ -1,0 +1,348 @@
+/* 
+  Meeting Minutes Stylesheet
+  This stylesheet implements all required CSS properties from Lab 3
+*/
+
+/* CSS Variables with fallbacks */
+:root {
+  --primary-color: #3a7ca5;
+  --secondary-color: #d9dcd6;
+  --text-color: #2f3e46;
+  --accent-color: #e76f51;
+  --heading-font: 'Montserrat', sans-serif;
+  --body-font: 'Open Sans', sans-serif;
+  --primary-color-light: #eef5f9; /* Light version of primary color for backgrounds */
+}
+
+/* Universal Selector */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Element Selector */
+body {
+  font-family: var(--body-font, sans-serif);
+  line-height: 1.6;
+  color: var(--text-color, #333);
+  background-color: #f8f9fa;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Heading styles - Element selector */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font, serif);
+  margin-bottom: 1em;
+  color: var(--primary-color, navy);
+}
+
+/* ID Selector */
+#meeting-info {
+  background-color: var(--secondary-color);
+  padding: 1.5em 2em 1.5em 2em;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  border: 2px solid #ccc;
+}
+
+/* Class Selector */
+.section-title {
+  color: var(--primary-color);
+  text-decoration: underline;
+  margin-top: 1.5rem;
+}
+
+/* Attribute Selector */
+[id^="section"] {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* RGB colors */
+header {
+  background-color: rgb(47, 62, 70);
+  color: rgb(255, 255, 255);
+  padding: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* RGBA colors */
+footer {
+  background-color: rgba(47, 62, 70, 0.9);
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  margin-top: 2em;
+  border-radius: 0 0 8px 8px;
+}
+
+/* HEX color */
+nav {
+  background-color: #2f3e46;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 4px;
+}
+
+/* HSLA color */
+nav ul li a {
+  color: hsla(0, 0%, 100%, 0.9);
+  text-decoration: none;
+}
+
+/* Replace color-mix with standard color */
+section:not(#meeting-info) {
+  background-color: var(--primary-color-light);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+}
+
+/* Relative units */
+p {
+  font-size: 1rem;
+  margin-bottom: 1em;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+/* Absolute units */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  justify-content: center;
+  padding: 5px;
+}
+
+/* Borders (longhand) */
+section {
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
+  border-radius: 8px;
+}
+
+/* Borders (shorthand) */
+img, video, audio {
+  border: 2px solid var(--accent-color);
+  border-radius: 4px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 15px auto;
+}
+
+/* Margins (longhand) */
+#agenda {
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+/* Margins (shorthand) */
+#unfinished {
+  margin: 20px 10px;
+}
+
+/* Auto margin */
+#media {
+  margin: auto;
+  max-width: 800px;
+}
+
+/* Padding (longhand) */
+#comments {
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+}
+
+/* Padding (shorthand) */
+#new {
+  padding: 15px 20px 15px 20px;
+}
+
+/* Text styling */
+h3 {
+  color: #333;
+  text-decoration: underline;
+  text-align: center;
+}
+
+/* Display properties */
+#attendance li {
+  display: block;
+  margin-bottom: 5px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/* Sizing */
+form {
+  width: 100%;
+  max-width: 600px;
+  min-width: 300px;
+  height: auto;
+}
+
+/* Position */
+#meeting-info h2 {
+  position: relative;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+}
+
+/* Pseudo-classes */
+a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+button:active {
+  transform: scale(0.98);
+  background-color: var(--primary-color);
+}
+
+/* Flexbox layout */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#media {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Grid layout */
+#feedback-form form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 15px;
+  align-items: center;
+}
+
+#feedback-form fieldset {
+  grid-column: 1 / span 2;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 10px;
+}
+
+/* Combinators: Descendant */
+footer p {
+  font-size: 0.875rem;
+}
+
+/* Combinators: Child */
+nav > ul {
+  padding: 0;
+}
+
+/* Combinators: Adjacent sibling */
+h2 + p {
+  font-weight: bold;
+}
+
+/* Combinators: General sibling */
+h2 ~ ul {
+  margin-left: 20px;
+}
+
+/* Combining two selectors */
+input.required {
+  border-left: 4px solid var(--accent-color);
+}
+
+/* Replace :has() selector with standard selector */
+li strong {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+/* Replace nested selectors with standard selectors */
+nav ul {
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  #feedback-form form,
+  #feedback-form fieldset {
+    grid-template-columns: 1fr;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding: 0.5rem;
+  }
+  
+  #meeting-info {
+    padding: 1em;
+  }
+  
+  h1 {
+    font-size: 1.75rem;
+  }
+}
+
+/* Selector List */
+h1, h2, h3 {
+  font-weight: bold;
+} 
