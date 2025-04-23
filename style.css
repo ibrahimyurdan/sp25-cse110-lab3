@@ -11,6 +11,10 @@
   --accent-color: #e76f51;
   --heading-font: 'Montserrat', sans-serif;
   --body-font: 'Open Sans', sans-serif;
+<<<<<<< HEAD
+  --primary-color-light: #eef5f9; /* Light version of primary color for backgrounds */
+=======
+>>>>>>> ff2f567b3c1c8d9f16ffda88d690d7cb6a6a2bb5
 }
 
 /* Universal Selector */
@@ -94,9 +98,15 @@ nav ul li a {
   text-decoration: none;
 }
 
+<<<<<<< HEAD
+/* Replace color-mix with standard color */
+section:not(#meeting-info) {
+  background-color: var(--primary-color-light);
+=======
 /* Color mixing */
 section:not(#meeting-info) {
   background-color: color-mix(in srgb, white 90%, var(--primary-color) 10%);
+>>>>>>> ff2f567b3c1c8d9f16ffda88d690d7cb6a6a2bb5
   padding: 1rem;
   margin-bottom: 1.5rem;
   border-radius: 5px;
@@ -280,12 +290,37 @@ input.required {
   border-left: 4px solid var(--accent-color);
 }
 
+<<<<<<< HEAD
+/* Replace :has() selector with standard selector */
+li strong {
+=======
 /* New :has() selector */
 li:has(> strong) {
+>>>>>>> ff2f567b3c1c8d9f16ffda88d690d7cb6a6a2bb5
   font-weight: bold;
   color: var(--primary-color);
 }
 
+<<<<<<< HEAD
+/* Replace nested selectors with standard selectors */
+nav ul {
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: var(--accent-color);
+=======
 /* Nested selectors */
 @nest nav {
   & ul {
@@ -300,6 +335,7 @@ li:has(> strong) {
       }
     }
   }
+>>>>>>> ff2f567b3c1c8d9f16ffda88d690d7cb6a6a2bb5
 }
 
 /* Media Queries for responsiveness */
