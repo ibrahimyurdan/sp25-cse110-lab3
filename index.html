@@ -6,6 +6,27 @@
     <meta name="description" content="Team Meeting Minutes for CSE 110 Project">
     <title>Team Meeting Minutes - CSE 110 Project</title>
     <link rel="icon" type="image/png" href="favicon.png">
+    <!-- External CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Internal CSS -->
+    <style>
+        /* Example of internal CSS */
+        .important-note {
+            background-color: #ffe6e6;
+            padding: 10px;
+            border-left: 4px solid #ff6b6b;
+            margin: 10px 0;
+        }
+        
+        #attendance hr {
+            height: 2px;
+            background-color: var(--accent-color, #e76f51);
+            border: none;
+            margin: 15px 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -30,7 +51,7 @@
         </section>
 
         <section id="attendance">
-            <h2>Attendance List</h2>
+            <h2 class="section-title">Attendance List</h2>
             <ul>
                 <li><strong>Present:</strong> John Doe (Team Lead), Jane Smith (Developer), Mike Johnson (Designer)</li>
                 <li><em>Absent:</em> Sarah Wilson (Documentation)</li>
@@ -39,7 +60,7 @@
         </section>
 
         <section id="agenda">
-            <h2>Agenda</h2>
+            <h2 class="section-title">Agenda</h2>
             <ol>
                 <li>Review project requirements</li>
                 <li>Brainstorm timer features</li>
@@ -49,18 +70,18 @@
         </section>
 
         <section id="unfinished">
-            <h2>Unfinished Business</h2>
+            <h2 class="section-title">Unfinished Business</h2>
             <div>
                 <p>Previous action items from team formation meeting:</p>
                 <ul>
-                    <li>Complete GitHub setup <b>Status:</b> <span>Done</span></li>
-                    <li>Review Agile methodology <b>Status:</b> <span>In Progress</span></li>
+                    <li><b>Complete GitHub setup</b> <span>Status:</span> <span style="color: green; font-weight: bold;">Done</span></li>
+                    <li><b>Review Agile methodology</b> <span>Status:</span> <span style="color: orange; font-style: italic;">In Progress</span></li>
                 </ul>
             </div>
         </section>
 
         <section id="new">
-            <h2>New Business</h2>
+            <h2 class="section-title">New Business</h2>
             <details>
                 <summary>Timer Features Discussion</summary>
                 <ul>
@@ -81,17 +102,20 @@
         </section>
 
         <section id="comments">
-            <h2>Comments/Questions/Concerns</h2>
+            <h2 class="section-title">Comments/Questions/Concerns</h2>
             <p>Team members raised concerns about:</p>
             <ul>
                 <li>Testing requirements</li>
                 <li>Browser compatibility</li>
                 <li>Project timeline</li>
             </ul>
+            <div class="important-note">
+                <p>Note: We need to follow up on browser compatibility testing requirements by next meeting.</p>
+            </div>
         </section>
 
         <section id="media">
-            <h2>Meeting Media</h2>
+            <h2 class="section-title">Meeting Media</h2>
             <h3>Whiteboard Diagram</h3>
             <img src="diagram.png" alt="System architecture diagram drawn on whiteboard" width="400">
             
@@ -109,36 +133,36 @@
         </section>
 
         <section id="feedback-form">
-            <h2>Meeting Feedback Form</h2>
+            <h2 class="section-title">Meeting Feedback Form</h2>
             <form>
                 <fieldset>
                     <legend>Provide Your Feedback</legend>
                     
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required><br><br>
+                    <input type="text" id="name" name="name" class="required" required>
                     
                     <label for="meeting-date">Meeting Date:</label>
-                    <input type="date" id="meeting-date" name="meeting-date"><br><br>
+                    <input type="date" id="meeting-date" name="meeting-date">
                     
                     <fieldset>
                         <legend>Meeting Satisfaction</legend>
                         <input type="radio" id="satisfaction-satisfied" name="satisfaction" value="satisfied">
-                        <label for="satisfaction-satisfied">Satisfied</label><br>
+                        <label for="satisfaction-satisfied">Satisfied</label>
                         <input type="radio" id="satisfaction-neutral" name="satisfaction" value="neutral">
-                        <label for="satisfaction-neutral">Neutral</label><br>
+                        <label for="satisfaction-neutral">Neutral</label>
                         <input type="radio" id="satisfaction-dissatisfied" name="satisfaction" value="dissatisfied">
                         <label for="satisfaction-dissatisfied">Dissatisfied</label>
-                    </fieldset><br>
+                    </fieldset>
                     
                     <fieldset>
                         <legend>Topics Covered</legend>
                         <input type="checkbox" id="topics-requirements" name="topics" value="requirements">
-                        <label for="topics-requirements">Requirements</label><br>
+                        <label for="topics-requirements">Requirements</label>
                         <input type="checkbox" id="topics-design" name="topics" value="design">
-                        <label for="topics-design">Design</label><br>
+                        <label for="topics-design">Design</label>
                         <input type="checkbox" id="topics-implementation" name="topics" value="implementation">
                         <label for="topics-implementation">Implementation</label>
-                    </fieldset><br>
+                    </fieldset>
                     
                     <label for="browser">Browser Used:</label>
                     <select id="browser" name="browser">
@@ -147,10 +171,10 @@
                         <option value="firefox">Firefox</option>
                         <option value="safari">Safari</option>
                         <option value="edge">Edge</option>
-                    </select><br><br>
+                    </select>
                     
-                    <label for="suggestions">Suggestions:</label><br>
-                    <textarea id="suggestions" name="suggestions" rows="4" cols="50"></textarea><br><br>
+                    <label for="suggestions">Suggestions:</label>
+                    <textarea id="suggestions" name="suggestions" rows="4" cols="50"></textarea>
                     
                     <label for="priority">Priority Level:</label>
                     <input list="priorities" id="priority" name="priority">
@@ -158,9 +182,9 @@
                         <option value="High">
                         <option value="Medium">
                         <option value="Low">
-                    </datalist><br><br>
+                    </datalist>
                     
-                    <button type="submit">Submit Feedback</button>
+                    <button type="submit" style="background-color: var(--primary-color); color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;">Submit Feedback</button>
                 </fieldset>
             </form>
         </section>
